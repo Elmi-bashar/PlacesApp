@@ -16,7 +16,7 @@ const FocusPlace = ({ place }: { place: Place | null }) => {
 
     useEffect(() => {
         if (place) {
-            map.flyTo([place.Latitude, place.Longitude], 15);;
+            map.flyTo([place.Latitude, place.Longitude], 15);
         }
     }, [place, map]);
 
@@ -92,7 +92,7 @@ const App = () => {
                             center={[p.Latitude, p.Longitude]}
                             radius={8}
                             pathOptions={{
-                                color: 'light_blue',
+                                color: 'lightblue',
                                 fillColor: 'blue',
                                 fillOpacity: 0.7,
                             }}
