@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.map-page {
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+}
+
+.places-panel {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1000;
+    width: 450px;
+    max-width: calc(100% - 32px);
+    max-height: calc(100dvh - 32px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 16px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px #0003;
+}
+
+.places-panel h2 {
+    margin: 0 0 12px;
+    font-size: 20px;
+}
+
+.places-panel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.places-panel button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 6px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Panel header with Add Place button */
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.panel-header h2 {
+    margin: 0;
+}
+
+.places-panel .add-btn {
+    width: auto;
+    margin: 0;
+    background: #2563eb;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.places-panel .link-btn {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.user-badge {
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Login popup */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    width: 400px;
+    max-width: calc(100% - 32px);
+    box-sizing: border-box;
+    box-shadow: 0 8px 32px #0005;
+}
+
+.modal h2 {
+    margin: 0 0 16px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.modal button[type='submit'] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.modal button[type='button'] {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #2563eb;
+    text-decoration: underline;
+    font: inherit;
+    cursor: pointer;
+}
+
+.auth-message {
+    margin: 0;
+    color: #c00;
+    font-size: 14px;
+}
