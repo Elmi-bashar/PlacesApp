@@ -45,6 +45,7 @@ body {
     text-align: left;
     font: inherit;
     cursor: pointer;
+<<<<<<< HEAD
 }
 
 /* Panel header with Add Place button */
@@ -146,4 +147,6 @@ body {
     margin: 0;
     color: #c00;
     font-size: 14px;
+=======
+>>>>>>> fb8ce56feb1cb3973b0ea428fe5e8b32d8ef6b5e
 }
